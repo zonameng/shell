@@ -53,7 +53,6 @@ __yellow(){
     fi
 }
 
-
 #install strongswan
 function install_ikev2(){
     disable_selinux
@@ -61,8 +60,6 @@ function install_ikev2(){
     yum_install
     get_my_ip
 }
-
-
 
 # Disable selinux
 function disable_selinux(){
