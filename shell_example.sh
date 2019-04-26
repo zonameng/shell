@@ -1,18 +1,18 @@
 #!/bin/bash
 #===============================================================================================
 #   System Required:  CentOS6.x/7 (32bit/64bit) or Ubuntu
-#   Description:  Install IKEV2 VPN for CentOS and Ubuntu
-#   Author: quericy
-#   Intro:  https://quericy.me/blog/699
+#   Description:  File Description
+#   Author: writer
+#   Intro: Introduction  
 #===============================================================================================
 
 clear
-VER=5.7.0
+VER=xxxx
 echo "#==================================================================================="
 echo "# Install IKEV2 VPN for CentOS6.x/7 (32bit/64bit) or Ubuntu or Debian7/8.*"
-echo "# Intro: https://quericy.me/blog/699"
+echo "# Intro: File Description"
 echo "#"
-echo "# Author:quericy"
+echo "# Author: writer"
 echo "#"
 echo "# Version:$VER"
 echo "#==================================================================================="
@@ -92,9 +92,9 @@ function get_system(){
 function yum_install(){
     if [ "$system_str" = "0" ]; then
     yum -y install epel-release
-    yum -y install strongswan
+    yum -y install wget
     else
-    apt-get -y install strongswan
+    apt-get -y install wget
     fi
 }
 # Get IP address of the server
